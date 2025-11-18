@@ -10,7 +10,7 @@ def bevitel():
     egesz = True
     while(egesz):
         try:
-            szam = int(input("adj meg egy egész számot: "))
+            szam = int(input(f"add meg a(z) {len(szamok)+1}. egész számot: "))
             szamok.append(szam)
             egesz = False
         except:
@@ -37,7 +37,7 @@ def kicsi_nagy(szamok):
     global db_szam
     kissebb = szamok[0]
     nagyobb = szamok[0]
-    for i in range(db_szam):
+    for i in range(1,db_szam):
         if(nagyobb<szamok[i]):
             nagyobb = szamok[i]
         if(kissebb>szamok[i]):
@@ -48,7 +48,6 @@ def kicsi_nagy(szamok):
 
 #main
 szamok = []
-szamok.clear()
 
 egesz = True
 while(egesz):
@@ -64,11 +63,15 @@ for i in range(db_szam):
 
 print(szamok)
 
-#for i in range(db_szam):
-#    if(paratlan(szamok[i])==True):
-#        db_paratlan = db_paratlan +1
 kicsinagy = []
 kicsinagy = kicsi_nagy(szamok)
 kissebb = kicsinagy[0]
 nagyobb = kicsinagy[1]
 print(f"A legkissebb ({kissebb}) és a legnagyobb ({nagyobb}) különbsége {nagyobb-kissebb}.")
+
+#szamok.sort()
+#print(szamok)
+
+#for i in range(db_szam):
+#    if(paratlan(szamok[i])==True):
+#        db_paratlan = db_paratlan +1
