@@ -163,7 +163,7 @@ match feladat_sorszam:
             prim = False
             while oszto<=szam and prim==False:
                 if oszto==szam:
-                    print(str(szam))
+                    print(szam)
                     prim = True
                 elif (szam%oszto)==0:
                     prim = True
