@@ -20,7 +20,17 @@ while(egesz):
 
 print('2. feladat')
 
+sz_ind = len(szamok)-1
+oszthato_7tel = False
+
+while(oszthato_7tel== False and sz_ind>0):
+    if(szamok[sz_ind]%7==0):
+        print(f"Az utolsó 7-tel osztható szám a listában a {sz_ind+1}. elem")
+        oszthato_7tel = True
+    sz_ind -= 1
+
 print('3. feladat')
+print(len(szamok))
 
 print('4. feladat')
 
