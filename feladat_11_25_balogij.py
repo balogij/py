@@ -42,8 +42,11 @@ kiirando = ""
 for szam in szamok:
     if(szam%15==0):
         kiirando += str(szam) +"/2=" + str(szam/2)+"   "
-        
-print(kiirando)
+        oszthato_15tel.append(szam)
+oszthato_db = len(oszthato_15tel)
+if(oszthato_db>0):
+    print(f"A listában {oszthato_db} darab 15-tel osztható szám szerepel ennek a fele {oszthato_db/2}.")
+    print(kiirando)
 
 print('5. feladat')
 utolsoelotti = len(szamok)-2
