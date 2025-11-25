@@ -30,9 +30,32 @@ while(oszthato_7tel== False and sz_ind>0):
     sz_ind -= 1
 
 print('3. feladat')
-print(len(szamok))
+print(f"{len(szamok)} szám szerepel a listában")
 
 print('4. feladat')
 
+sz_ind = len(szamok)-1
+oszthato_15tel = []
+
+print("A lista 15-tel osztható számainak a fele:")
+kiirando = ""
+for szam in szamok:
+    if(szam%15==0):
+        kiirando += str(szam) +"/2=" + str(szam/2)+"   "
+        
+print(kiirando)
+
 print('5. feladat')
+utolsoelotti = len(szamok)-2
+kovetnegativotpozitiv = False
+knp_lista = []
+for i in range(utolsoelotti):
+    if(szamok[i]<0 and szamok[i+1]>0):
+        kovetnegativotpozitiv = True
+        knp_lista.append(szamok[i])
+if(kovetnegativotpozitiv):
+    print("A listában van olyan negatív szám amit pozitív követ")
+    print(f"Ez(ek) a {knp_lista} szám(ok)")
+else:
+    print("A listában nincs olyan negatív szám, amit pozitív követ")
 
