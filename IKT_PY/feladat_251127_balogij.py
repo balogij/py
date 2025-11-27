@@ -159,6 +159,19 @@ while (fut):
             case 8:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
+                szamok =[2,4,12,3,6,7,9,8,11]
+                notnumber = True
+                while(notnumber):
+                    try:
+                        elso = int(input('Kérek egy egész számot: '))
+                        notnumber = False
+                    except ValueError:
+                        print('Ez nem szám!')
+                if elso in szamok:
+                    print(f'A(z) {elso} szerepel a {szamok} között')
+                else:
+                    print(f'A(z) {elso} nem szerepel a {szamok} között')
+
             case 9:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
