@@ -66,9 +66,22 @@ while (fut):
                         print(f'A(z) {elso} páratlan szám')
                 else:
                     print('a megadott szám a nulla')
+            #3. feladat
             case 3:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
+                szamok = []
+                for _ in range(3):
+                    notnumber = True
+                    while(notnumber):
+                        try:
+                            elso = float(input('Kérek egy számot: '))
+                            szamok.append(elso)
+                            notnumber = False
+                        except ValueError:
+                            print('Ez nem szám!')
+                    legnagyobb = elso
+                print(f'A három szám közül ({szamok}) a(z) {legnagyobb} a legnagyobb szám.')
             case 4:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
