@@ -55,7 +55,7 @@ while (fut):
                 print(f'Az első és a második szám összege: {elso}+{masodik}={elso+masodik}')
             #második feladat
             case 2:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 notnumber = True
                 while(notnumber):
@@ -73,7 +73,7 @@ while (fut):
                     print('a megadott szám a nulla')
             #3. feladat
             case 3:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 szamok = []
                 legnagyobb = 0
@@ -94,7 +94,7 @@ while (fut):
                 print(f'A három szám közül ({szamok}) a(z) {legnagyobb} a legnagyobb szám.')
             #4. feladat    
             case 4:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 notnumber = True
                 while(notnumber):
@@ -112,7 +112,7 @@ while (fut):
                         print(i)
             #5. feladat
             case 5:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 notnumber = True
                 while(notnumber):
@@ -138,7 +138,7 @@ while (fut):
                     print(f'A(z) {szamok[i]} és {szamok[i+1]} közti számok összege: {osszeg}')
             #6. feladat
             case 6:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 szamok = []
                 osszeg = 0
@@ -155,7 +155,7 @@ while (fut):
                 print(f'A {szamok} átlaga {osszeg/5}.')
             #7. feladat
             case 7:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 szamok =[2,4,12,3,6,7,9,8,11]
                 print(f'A {szamok} között')
@@ -179,7 +179,7 @@ while (fut):
                     print(f'A(z) {elso} nem szerepel a {szamok} között')
             #9. feladat
             case 9:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 szamok =[2,4,12,3,6,7,9,8,11]
                 parosak = []
@@ -189,7 +189,7 @@ while (fut):
                 print(f'A(z) {szamok} közül a(z) {parosak} a páros számok')
             #10. feladat
             case 10:
-                colored(feladatok[sorszam-1])
+                colored(255,0,0,feladatok[sorszam-1])
                 print('Megoldas:')
                 szamok =[2,4,12,3,6,7,9,8,11]
                 print(f'A rendezetlen lista: {szamok}')
