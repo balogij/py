@@ -71,6 +71,7 @@ while (fut):
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
                 szamok = []
+                legnagyobb = 0
                 for _ in range(3):
                     notnumber = True
                     while(notnumber):
@@ -80,14 +81,49 @@ while (fut):
                             notnumber = False
                         except ValueError:
                             print('Ez nem szám!')
-                    legnagyobb = elso
+                    if(elso>legnagyobb and len(szamok)>1):
+                        legnagyobb = elso
+                    elif len(szamok)==1:
+                        legnagyobb = elso
+                    print(legnagyobb)
                 print(f'A három szám közül ({szamok}) a(z) {legnagyobb} a legnagyobb szám.')
+            #4. feladat    
             case 4:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
+                notnumber = True
+                while(notnumber):
+                    try:
+                        szam = int(input('Kérek egy számot: '))
+                        notnumber = False
+                    except ValueError:
+                        print('Ez nem szám!')
+                
+                if(szam>=0):
+                    for i in range(1,szam):
+                        print(i)
+                else:
+                    for i in range(szam,1):
+                        print(i)
             case 5:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
+                notnumber = True
+                while(notnumber):
+                    try:
+                        darab = int(input('Hány darab számot kérjünk be?: '))
+                        notnumber = False
+                    except ValueError:
+                        print('Ez nem szám!')
+                for i in range(darab):
+                    notnumber = True
+                    while(notnumber):
+                        try:
+                            elso = float(input('Kérek egy számot: '))
+                            szamok.append(elso)
+                            notnumber = False
+                        except ValueError:
+                            print('Ez nem szám!')
             case 6:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
