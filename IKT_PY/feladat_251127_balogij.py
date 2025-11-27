@@ -55,15 +55,15 @@ while (fut):
                 notnumber = True
                 while(notnumber):
                     try:
-                        elso = float(input('Kérem az első számot: '))
+                        elso = int(input('Kérek egy egész számot: '))
                         notnumber = False
                     except ValueError:
                         print('Ez nem szám!')
                 if(elso>0 or elso<0):
                     if(elso%2 == 0):
-                        print(f'A(z) {elso}' páros szám)
+                        print(f'A(z) {elso} páros szám')
                     else:
-                        print(f'A(z) {elso}' páros szám)
+                        print(f'A(z) {elso} páratlan szám')
                 else:
                     print('a megadott szám a nulla')
             case 3:
