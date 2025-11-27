@@ -183,8 +183,27 @@ while (fut):
                 for szam in szamok:
                     if(szam%2==0):
                         parosak.append(szam)
-                print(f'A {szamok} közül az {parosak} a páros számok')
+                print(f'A(z) {szamok} közül a(z) {parosak} a páros számok')
             #10. feladat
             case 10:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
+                szamok =[2,4,12,3,6,7,9,8,11]
+                print(f'A rendezetlen lista: {szamok}')
+                n = len( szamok )
+
+                for i in range( n - 1 ) :
+                    flag = 0
+
+                    for j in range(n - 1) :
+                        
+                        if szamok[j] > szamok[j + 1] : 
+                            tmp = szamok[j]
+                            szamok[j] = szamok[j + 1]
+                            szamok[j + 1] = tmp
+                            flag = 1
+
+                    if flag == 0:
+                        break
+                print(f'A rendezett lista: {szamok}')
+
