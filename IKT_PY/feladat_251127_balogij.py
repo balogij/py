@@ -4,9 +4,9 @@ feladatok = ['1. Kérj be két számot, és írd ki az összegüket.',
 '4. Kérj be egy N értéket, majd írd ki 1-től N-ig a számokat egy ciklussal.',
 '5. Kérj be egy N számot, majd számold ki a közötti számok összegét.',
 '6. Kérj be 5 darab számot, tedd őket listába, majd számold ki az átlagukat.',
-'7. Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket és a legkisebb értéket'
-'8. Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.'
-'9. Adott egy lista számokkal. Készíts új listát, amelyben csak a páros számok szerepelnek.'
+'7. Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket és a legkisebb értéket',
+'8. Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.',
+'9. Adott egy lista számokkal. Készíts új listát, amelyben csak a páros számok szerepelnek.',
 '10. Írj programot, ami egy listát buborékrendezéssel növekvő sorrendbe tesz.']
 
 countFeladat = len(feladatok)
@@ -133,6 +133,7 @@ while (fut):
                     for x in range(szamok[i]+1,szamok[i+1]):
                         osszeg += x
                     print(f'A(z) {szamok[i]} és {szamok[i+1]} közti számok összege: {osszeg}')
+            #6. feladat
             case 6:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
@@ -149,6 +150,7 @@ while (fut):
                         except ValueError:
                             print('Ez nem szám!')
                 print(f'A {szamok} átlaga {osszeg/5}.')
+            #7. feladat
             case 7:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
@@ -156,6 +158,7 @@ while (fut):
                 print(f'A {szamok} között')
                 print(f'A legnagyobb a(z) {max(szamok)}')
                 print(f'A legkissebb a(z) {min(szamok)}')
+            #8. feladat
             case 8:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
@@ -171,10 +174,17 @@ while (fut):
                     print(f'A(z) {elso} szerepel a {szamok} között')
                 else:
                     print(f'A(z) {elso} nem szerepel a {szamok} között')
-
+            #9. feladat
             case 9:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
+                szamok =[2,4,12,3,6,7,9,8,11]
+                parosak = []
+                for szam in szamok:
+                    if(szam%2==0):
+                        parosak.append(szam)
+                print(f'A {szamok} közül az {parosak} a páros számok')
+            #10. feladat
             case 10:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
