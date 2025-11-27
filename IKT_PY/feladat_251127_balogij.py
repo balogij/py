@@ -99,12 +99,13 @@ while (fut):
                     except ValueError:
                         print('Ez nem szám!')
                 
-                if(szam>=0):
-                    for i in range(1,szam):
+                if(szam>0):
+                    for i in range(1,szam+1):
                         print(i)
                 else:
-                    for i in range(szam,1):
+                    for i in range(1,szam-1,-1):
                         print(i)
+            #5. feladat
             case 5:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
@@ -115,15 +116,37 @@ while (fut):
                         notnumber = False
                     except ValueError:
                         print('Ez nem szám!')
+                szamok = []
                 for i in range(darab):
                     notnumber = True
                     while(notnumber):
                         try:
-                            elso = float(input('Kérek egy számot: '))
+                            elso = int(input('Kérek egy számot: '))
                             szamok.append(elso)
                             notnumber = False
                         except ValueError:
                             print('Ez nem szám!')
+                for i in range(darab-1):
+                    osszeg = 0
+                    for x in range(szamok[i]+1,szamok[i+1]):
+                        osszeg += x
+                    print(f'A(z) {szamok[i]} és {szamok[i+1]} közti számok összege: {osszeg}')
             case 6:
+                print(feladatok[sorszam-1])
+                print('Megoldas:')
+                szamok = []
+                osszeg = 0
+                for i in range(5):
+                    notnumber = True
+                    while(notnumber):
+                        try:
+                            elso = int(input('Kérek egy egész számot: '))
+                            szamok.append(elso)
+                            osszeg += elso
+                            notnumber = False
+                        except ValueError:
+                            print('Ez nem szám!')
+                print(f'A {szamok} átlaga {osszeg/5}.')
+            case 7:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
