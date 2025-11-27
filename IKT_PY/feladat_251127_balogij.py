@@ -1,11 +1,13 @@
-feladatok = ['Kérj be két számot, és írd ki az összegüket.',
-'Kérj be egy számot, és döntsd el, hogy páros-e.',
-'Kérj be három számot, és írd ki melyik a legnagyobb.',
-'Kérj be egy N értéket, majd írd ki 1-től N-ig a számokat egy ciklussal.',
-'Kérj be egy N számot, majd számold ki a közötti számok összegét.',
-'Kérj be 5 darab számot, tedd őket listába, majd számold ki az átlagukat.',
-'Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket és a legkisebb értéket'
-'Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.']
+feladatok = ['1. Kérj be két számot, és írd ki az összegüket.',
+'2. Kérj be egy számot, és döntsd el, hogy páros-e.',
+'3. Kérj be három számot, és írd ki melyik a legnagyobb.',
+'4. Kérj be egy N értéket, majd írd ki 1-től N-ig a számokat egy ciklussal.',
+'5. Kérj be egy N számot, majd számold ki a közötti számok összegét.',
+'6. Kérj be 5 darab számot, tedd őket listába, majd számold ki az átlagukat.',
+'7. Adj meg egy listát tetszőleges egész számokkal, majd írd ki: a legnagyobb értéket és a legkisebb értéket'
+'8. Kérj be egy számot és döntsd el, hogy benne van-e az előre adott listában.'
+'9. Adott egy lista számokkal. Készíts új listát, amelyben csak a páros számok szerepelnek.'
+'10. Írj programot, ami egy listát buborékrendezéssel növekvő sorrendbe tesz.']
 
 countFeladat = len(feladatok)
 
@@ -148,5 +150,18 @@ while (fut):
                             print('Ez nem szám!')
                 print(f'A {szamok} átlaga {osszeg/5}.')
             case 7:
+                print(feladatok[sorszam-1])
+                print('Megoldas:')
+                szamok =[2,4,12,3,6,7,9,8,11]
+                print(f'A {szamok} között')
+                print(f'A legnagyobb a(z) {max(szamok)}')
+                print(f'A legkissebb a(z) {min(szamok)}')
+            case 8:
+                print(feladatok[sorszam-1])
+                print('Megoldas:')
+            case 9:
+                print(feladatok[sorszam-1])
+                print('Megoldas:')
+            case 10:
                 print(feladatok[sorszam-1])
                 print('Megoldas:')
