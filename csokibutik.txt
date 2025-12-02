@@ -1,0 +1,11 @@
+ét;175;doboz
+tej;250;papír
+fehér;275;papír
+tej;425;papír
+ét;325;doboz
+tej;150;kimérős
+ét;275;doboz
+tej;125;papír
+fehér;325;doboz
+fehér;275;kimérős
+
